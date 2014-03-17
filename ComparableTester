@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+/**
+ * Write a description of class ComparableTester here.
+ * 
+ * @ MmeBunneh
+ * @ 12 March 2014
+ */
+public class ComparableTester
+{
+    public static void main (String [] args)
+    {
+        String s1 = "Bunn";
+        String s2 = "Bunbun";
+        
+        Integer x = new Integer(15);
+        Integer y = new Integer(27);
+        
+        Double d1 = new Double(3.14);
+        Double d2 = new Double (2.718);
+        
+        ArrayList<Comparable> list = new ArrayList<Comparable>();
+        list.add(s1); list.add(s2);
+        list.add(x); list.add(y);
+        list.add(d1); list.add(d2);
+        
+        System.out.println(list);
+        
+        ArrayList<Comparable> biggerList = new ArrayList<Comparable>();
+        for (int i = 0; i < list.size(); i = i+2)
+        {
+            if (list.get(i).compareTo(list.get(i+1)) > 0)
+            {
+                biggerList.add(list.get(i));
+            }
+            else
+            {
+                biggerList.add(list.get(i+1));
+            }
+            
+        }
+        System.out.println(biggerList);
+        //Integer k1 = new Integer (7);
+        //Integer k2 = new Integer (13);
+        
+        //biggerList.add(k1); biggerList.add(k2);
+    }
+}
