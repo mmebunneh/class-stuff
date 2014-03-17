@@ -1,0 +1,46 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+/*
+ * This is notes from Day 3 in the packet
+ *
+ * Author @ MmeBunneh
+ *
+ */
+public class DayThree
+{
+    private String bunVariation;
+    private String bunNames;
+    public static void main(String [] args)
+    {
+        // Lab Part 1: Arrays
+        // declare names to hold Strings
+        String [] myArray = new String[3];
+        String [] bunneh = new String[3];
+        String [] bunbun = new String[3];
+        
+        myArray[0] = "Squire Bunneh";
+        myArray[1] = "Lord Bunbun";
+        myArray[2] = "Peasant Bunn";
+        Arrays.sort(myArray);
+        
+        for (String s: myArray)
+        {
+            System.out.println(s);
+        }
+        
+        // Lab Part 2: ArrayList
+        Integer bun1 = new Integer(3);
+        Integer bun2 = new Integer(17);
+        Integer bun3 = new Integer(7);
+        
+        ArrayList<Integer> myArrayList = new ArrayList<Integer>();
+        myArrayList.add(bun1); myArrayList.add(bun2); myArrayList.add(bun3);
+        
+        Collections.sort(myArrayList);
+        System.out.println(myArrayList);
+        
+        // Lab Part 3: Card
+        
+    }
+}
