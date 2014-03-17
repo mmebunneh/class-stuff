@@ -1,0 +1,48 @@
+/*
+ * @ MmeBunneh
+ */
+public class BunnehKingdomStudent implements Student
+{
+    // Instance variables
+    private String nobleName;
+    private String nobleRank;
+    private char cheesecakeGrade;
+    private int nationalID;
+    private int amountSouffle;
+    private String day;
+    private String week;
+    private String bunnehMonth;
+    
+    public BunnehKingdomStudent (String nobleName, String nobleRank,
+                                 char cheesecakeGrade, 
+                                 int nationalID, 
+                                 int amountSouffle,
+                                 String day, String week, String bunnehMonth)
+    {
+        this.nobleName = nobleName;
+        this.nobleRank = nobleRank;
+        this.cheesecakeGrade = cheesecakeGrade;
+        this.nationalID = nationalID;
+        this.amountSouffle = amountSouffle;
+        this.day = day;
+        this.week = week;
+        this.bunnehMonth = bunnehMonth;
+    }
+    
+    public String getName()
+    {
+        return this.nobleName;
+    }
+    public int getGrade()
+    {
+        return this.cheesecakeGrade;
+    }
+    public int getID()
+    {
+        return this.nationalID;
+    }
+    public String toString()
+    {
+        return getName() + ", " + getGrade() + ", " + getID();
+    }
+}
