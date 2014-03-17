@@ -1,0 +1,6 @@
+public interface Student
+{
+    public String getName();
+    public int getGrade();
+    public int getID();
+}
